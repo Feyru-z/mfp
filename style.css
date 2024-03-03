@@ -1,1 +1,41 @@
-
+body {
+  background-color: #2A2C2F;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  font-family: Inter;
+  font-size: 24px;
+  padding: 28px 48px 0;
+  box-sizing: border-top;
+}
+.header__lang{
+  display: flex;
+}
+.header__lang-text {
+  color: white;
+  font-size: 20px;
+}
+.header__lang-text:first-child {
+    margin-right: 18px;
+}
+.main{
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+.main__title {
+  font-size: 96px;
+}
+@media screen and (max-width: 800px) {
+  .header{
+    flex-direction: column;
+  }
+  .header__svg {
+    width: 100px;
+    height: 20px;
+  }
+  .main__title {
+    font-size: 50px;
+  }
+}
